@@ -13,8 +13,8 @@ jobs:
     env: 
       # Job specific environment variable
       MONGODB_CLUSTER_ADDRESS: tsw.kecxsst.mongodb.net
-      MONGODB_USERNAME: learntocodeinhindi
-      MONGODB_PASSWORD: M7ueM5PzWSvPz5Sk 
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
